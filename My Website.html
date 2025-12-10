@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Me — Scrapbook Aesthetic</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+/* ------------------------ */
+/*     COLOR PALETTE 🎀     */
+/* ------------------------ */
+:root {
+  --pink: #ffd9e8;
+  --lightpink: #ffeef4;
+  --darkpink: #ffb9d3;
+  --peach: #ffe6d6;
+  --white: #ffffff;
+  --shadow: 0 8px 20px rgba(255, 150, 180, 0.25);
+}
+
+/* ------------------------ */
+/*     BASE LAYOUT          */
+/* ------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /* ✨ Soft aesthetic scrapbook background */
+  background: linear-gradient(135deg, #ffe6f1, #ffd9e8, #ffeef4);
+
+  /* Paper texture overlay */
+  background-image:
+    linear-gradient(135deg, #ffe6f1cc, #ffd9e8cc, #ffeef4cc),
+    url('https://i.imgur.com/1Q9Z1Ao.png');
+
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* Soft vignette glow around edges */
+  box-shadow: inset 0 0 120px rgba(255, 150, 180, 0.25);
+
+  color: #444;
+}
+
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0 50px;
+}
+
+/* ------------------------ */
+/*     HEADER SECTION       */
+/* ------------------------ */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: var(--pink);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  color: #d24a82;
+  margin-bottom: 10px;
+}
+
+/* Heart doodle */
+header::after {
+  content: "❤";
+  font-size: 40px;
+  color: #ff8fb7;
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-8px);}
+  100% { transform: translateY(0);}
+}
+
+/* ------------------------ */
+/*     SCRAPBOOK CARDS      */
+/* ------------------------ */
+.card {
+  background: var(--white);
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  position: relative;
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Tape stickers */
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  background: var(--peach);
+  opacity: 0.6;
+  border-radius: 6px;
+  transform: rotate(-8deg);
+}
+.card::before {
+  top: -12px;
+  left: -10px;
+}
+.card::after {
+  bottom: -12px;
+  right: -10px;
+  transform: rotate(8deg);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0);}
+  from { opacity: 0; transform: translateY(20px);}
+}
+
+/* ----------------------------- */
+/*     POLAROID PHOTO STYLE      */
+/* ----------------------------- */
+.polaroid {
+  background: var(--white);
+  padding: 10px;
+  width: 230px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  transform: rotate(-3deg);
+  transition: 0.3s;
+  margin: 10px;
+}
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.polaroid p {
+  text-align: center;
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ----------------------------- */
+/*     SCRAPBOOK GRID            */
+/* ----------------------------- */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ----------------------------- */
+/*     SECTION TITLES            */
+/* ----------------------------- */
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #e34a82;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Cute bullet list */
+ul {
+  list-style: "🌸 ";
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* ----------------------------- */
+/* FOOTER                        */
+/* ----------------------------- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<header>
+  <h1>My Website Project</h1>
+  <p>“All About Me” ♡</p>
+</header>
+
+<!-- ░░░░░░░ ABOUT ME ░░░░░░░ -->
+<div class="card">
+  <h2>About Me</h2>
+
+  <div class="grid">
+    <div class="polaroid">
+      <img src="picture 1.jpg.jpg" alt="">
+      <p>Me ♡</p>
+    </div>
+
+    <div style="max-width: 400px;">
+      <p>Hi! I'm <b>Kim Erich Asher R. Claveria</b>, and this is my website. I love watching kdrama, music, food, and learning new things. This page shows all my favorite things, my family, hobbies, school life, and more!</p>
+
+      <ul>
+        <li>Age: 18</li>
+        <li>Birthday: July 10, 2007</li>
+        <li>Address: Bagong Silang, San Jose Occidental Mindoro</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ░░░░░░░ FAMILY ░░░░░░░ -->
+<div class="card">
+  <h2>My Family</h2>
+
+  <div class="grid">
+    <div class="polaroid">
+      <img src="my family.jpeg.jpeg" alt="">
+      <p>Family ♡</p>
+    </div>
+
+    <p style="max-width: 500px;">
+      I live with my family who supports me and makes me happy. My family is very hardworking. My mother works diligently in our sari-sari store, while my father earns a living as a tricycle driver. We are six siblings in total, with two girls and four boys. Three of my brothers have been working in Manila, while my older sister works here locally at Kmarie Store. My youngest sibling and I are still studying, focusing on our education so that we can support our family in the future. Despite the distance from my brothers, our family remains connected and supportive of one another.
+  </div>
+</div>
+
+<!-- ░░░░░░░ HOBBIES ░░░░░░░ -->
+<div class="card">
+  <h2>My Hobbies</h2>
+
+  <div class="grid">
+    <div class="polaroid">
+      <img src="my hobby1.jpeg.jpeg" alt="">
+      <p>WATCHING KDRAMA</p>
+    </div>
+	
+	<div class="grid">
+    <div class="polaroid">
+      <img src="my hobby2.jpeg.jpeg" alt="">
+      <p>LISTENING MUSIC</p>
+    </div>
+
+    <div class="grid">
+    <div class="polaroid">
+      <img src="my hobby3.jpeg.jpeg" alt="">
+      <p>PUTTING MAKEUP</p>
+    </div>
+    
+	    <ul style="max-width: 300px;">
+  </div>
+</div>
+
+<!-- ░░░░░░░ FAVORITES ░░░░░░░ -->
+<div class="card">
+  <h2>My Favorites</h2>
+
+  <div class="grid">
+    <div class="polaroid">
+      <img src="my fav1.jpeg" alt="">
+      <p>Favorite singer</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="my fav2.jpeg" alt="">
+      <p>Favorite kmovie</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="my fav3 (2).jpeg" alt="">
+      <p>Favorite flower</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ░░░░░░░ SCHOOL LIFE ░░░░░░░ -->
+<div class="card">
+  <h2>School Life</h2>
+
+  <ul>
+    <li>Favorite Subjects: Web System, Computer Programming</li>
+    <li>Likes: Friends, Projects, Teachers</li>
+    <li>Dislikes: Homework hehe😭</li>
+  </ul>
+
+  <p><b>Plans after graduate:</b> After I graduate, my main goal is to find a stable job that can support my needs and help me grow as a person. I want to build a good future for myself and my family, so I will work hard to achieve it. I also dream of becoming successful in whatever path I choose, whether it’s continuing my studies, getting a job, or exploring new opportunities. I believe that with patience, dedication, and determination, I can reach my goals and make my future better.</p>
+</div>
+
+<!-- ░░░░░░░ GALLERY ░░░░░░░ -->
+<div class="card">
+  <h2>Photo Gallery</h2>
+
+  <div class="grid">
+    <div class="polaroid"><img src="FRIENDS1.jpg"><p>Memory 1</p></div>
+    <div class="polaroid"><img src="FRIENDS2.jpg"><p>Memory 2</p></div>
+    <div class="polaroid"><img src="MEE.jpeg"><p>Memory 3</p></div>
+    <div class="polaroid"><img src="MEEE.jpeg
+	"><p>Memory 4</p></div>
+  </div>
+</div>
+
+<footer>
+  — All About Me ♡
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasagna Order Form</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --pink-strong: #E4879E;      
+            --pink-medium: #F5C0D3;      
+            --pink-light: #FCD6E3;       
+            --text-dark: #4A202A;        
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 650px;
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--pink-strong);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .food-image {
+            display: block;
+            margin: 0 auto 25px;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--text-dark);
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid var(--pink-medium);
+            border-radius: 10px;
+            outline: none;
+            font-size: 1em;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--pink-strong);
+            box-shadow: 0 0 5px var(--pink-medium);
+        }
+
+        button {
+            background-color: var(--pink-strong);
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--pink-medium);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-style: italic;
+            color: var(--pink-strong);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lasagna Order Form</h1>
+
+        <!-- Lasagna Picture -->
+        <img src="LASAGNA.jpg" alt="Delicious Lasagna" class="food-image">
+
+        <!-- Order Form -->
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="e.g. 09123456789" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="size">Lasagna Size:</label>
+            <select id="size" name="size" required>
+                <option value="">-- Select Size --</option>
+                <option value="small">Small (₱150)</option>
+                <option value="medium">Medium (₱250)</option>
+                <option value="large">Large (₱350)</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+            <label for="creditcard">Credit Card Number:</label>
+            <input type="text" id="creditcard" name="creditcard" maxlength="16" placeholder="Enter 16-digit number" required>
+
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" name="pin" maxlength="4" placeholder="4-digit PIN" required>
+
+            <label for="note">Additional Note:</label>
+            <textarea id="note" name="note" rows="3" placeholder="Add instructions like extra cheese or less sauce..."></textarea>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="3" placeholder="Share your feedback or suggestions..."></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <p class="footer">Thank you for ordering our special homemade Lasagna! 🍝</p>
+    </div>
+</body>
+</html>
+
+
+
+fonts.googleapis.com
